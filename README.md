@@ -4,7 +4,7 @@
 
 2. Run brew.py with cleanBreweries.txt as input and breweries.txt and brewAddress.csv as outputs. breweries.txt simply contains a cleaned up version of the full dataset (though it's not final). brewAddress.csv is formatted for the US Census website batch geocode finder.
 
-3. Submit brewAddress.csv to the US Census Geocoder for longitude and latitude: https://geocoding.geo.census.gov/geocoder/locations/addressbatch?form
+3. Submit brewAddress.csv to the US Census Geocoder for the geographic coordinates: https://geocoding.geo.census.gov/geocoder/locations/addressbatch?form
 This returns GeocodeResults.csv
 
 4. Run formatBrew.R with breweries.txt and GeocodeResults.csv as input to obtain breweries_final.csv (located in the R Shiny app folder called brews)
