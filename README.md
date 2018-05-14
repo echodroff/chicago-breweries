@@ -2,7 +2,7 @@
 
 1. Obtain raw data from http://thehopreview.com/blog/chicago-brewery-list. This is in cleanBreweries.txt (clean as in it needs to be cleaned)
 
-2. Run brew.py with cleanBreweries.txt as input and breweries.txt and brewAddress.csv as outputs. Yes, there are some redundant lines of code in there, but we all know this is what happens with iterative updates to the code. breweries.txt simply contains a cleaned up version of the full dataset (though it's not final). brewAddress.csv is formatted for the US Census Geocoder.
+2. Run brew.py with cleanBreweries.txt as input and breweries.txt and brewAddress.csv as outputs. Yes, there are some redundant lines of code in there, but we all know this is what happens with incremental updates to the code. breweries.txt simply contains a cleaned up version of the full dataset (though it's not final). brewAddress.csv is formatted for the US Census Geocoder.
 
 3. Submit brewAddress.csv to the US Census Geocoder for the geographic coordinates: https://geocoding.geo.census.gov/geocoder/locations/addressbatch?form
 This returns GeocodeResults.csv
