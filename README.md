@@ -1,6 +1,6 @@
 # chicago-breweries
 
-1. Obtained raw data from http://thehopreview.com/blog/chicago-brewery-list. This is in cleanBreweries.txt (clean as in it needs to be cleaned)
+1. Obtain raw data from http://thehopreview.com/blog/chicago-brewery-list. This is in cleanBreweries.txt (clean as in it needs to be cleaned)
 
 2. Run brew.py with cleanBreweries.txt as input and breweries.txt and brewAddress.csv as outputs. breweries.txt simply contains a cleaned up version of the full dataset (though it's not final). brewAddress.csv is formatted for the US Census Geocoder.
 
