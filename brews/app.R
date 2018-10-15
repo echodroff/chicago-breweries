@@ -14,9 +14,13 @@ brews$area <- ifelse(brews$neighborhood %in% c('South Loop', 'Hyde Park', 'Bridg
 brews$latitude <- as.numeric(brews$latitude)
 brews$longitude <- as.numeric(brews$longitude)
 
-chicagoMap <- get_map(location = c(lon = -87.65, lat = 41.93), color = "color", source = "google", maptype = "roadmap",zoom = 12)
-chicagolandMap <- get_map(location = c(lon = -87.6, lat = 41.9), color = "color", source = "google", maptype = "roadmap",zoom = 9)
+# chicagoMap <- get_map(location = c(lon = -87.65, lat = 41.93), color = "color", source = "google", maptype = "roadmap",zoom = 11)
+# chicagolandMap <- get_map(location = c(lon = -87.6, lat = 41.9), color = "color", source = "google", maptype = "roadmap",zoom = 9)
+# save(chicagoMap, file = "chicagoMap.RData")
+# save(chicagolandMap, file = "chicagolandMap.RData")
 
+load("chicagoMap.RData")
+load("chicagolandMap.RData")
 
 # Define UI----
 ui <- dashboardPage(
@@ -104,7 +108,8 @@ server <- function(input, output) {
 				brewCity <- paste(brewCity, brewNeighborhood, sep=' - ')
 				}
 			paste(brewName, brewCity, brewFeats, sep='\n')
-		}
+		} else {
+		paste('Hover for more info', ' ', ' ', sep='\n') }
     })
     
     }	
